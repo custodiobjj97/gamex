@@ -1,0 +1,12 @@
+@import "global/global.css";
+@import "global/header.css";
+
+@import "home/home.css";
+
+@import "about/about.css";
+@import "about/desc.css";
+@import "gallery/gallery.css";
+@import "member/member.css";
+@import "gear/gear.css";
+@import "contact/contact.css";
+@import "footer/footer.css";

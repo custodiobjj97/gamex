@@ -1,0 +1,143 @@
+header{
+    background-color: var(--color-primary);
+    padding: 1rem;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 22222;
+}
+
+.list-menu{
+    width: 0%;
+    height: 100vh;
+    background-color: var(--color-primary);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    pointer-events: none;
+    transition: .4s;
+}
+
+.list-menu.open{
+    width: 50%;
+    opacity: 1;
+    pointer-events: visible;
+}
+
+
+
+.toggle{
+   width: 35px;
+   height: 35px;
+   cursor: pointer;
+   position: absolute;
+   top: 2rem;
+   right: 1rem;
+}
+
+.toggle .line{
+    border-top: 3px solid #000;
+    width: 100%;
+    display: block;
+    
+}
+
+.toggle .line::before,
+.toggle .line::after{
+    content: "";
+    width: 100%;
+    height: 3px;
+    display: block;
+    background-color: #000;
+    margin-top: 5px;
+    position: relative;
+    transition: .4s;
+}
+
+.toggle .line.open{
+    border-top-color: transparent;
+}
+
+.toggle .line.open::before{
+    transform: rotate(210deg);
+}
+
+.toggle .line.open::after{
+    transform: rotate(-210deg);
+    top: -8px;
+}
+
+
+.list-menu li a{
+    color: #fff;
+    margin: 1rem;
+    padding: 1rem;
+    transition: .4s;
+}
+
+.list-menu li a:hover{
+    background-color: var(--color-hover);
+    max-width: 120px;
+    border-radius: 5px;
+}
+
+.box-header{
+    display: none;
+}
+
+
+@media (min-width:1042px){
+    .toggle{
+        display: none;
+    }
+
+    .list-menu{
+        opacity: 1;
+        pointer-events: visible;
+        flex-direction: row;
+        width: 100%;
+        height: 0px;
+        top: 50%;
+    }
+
+    .list-menu li a:hover{
+        background-color: transparent;
+        color: var(--color-hover);
+    }
+
+    .box-header{
+        display: flex;
+        gap: 1rem;
+    }
+
+    .box-header .search-btn{
+        color: #fff;
+        padding: 1rem;
+        position: relative;
+        font-size: 2rem;
+    }
+
+    .box-header .search-btn::after{
+        content: "";
+        height: 50%;
+        width: 3px;
+        display: block;
+        background-color: #000;
+        position: absolute;
+        top: 20px;
+        right: -1rem;
+    }
+
+    .box-header .login{
+        padding: 1.7rem;
+        color: #fff;
+    }
+}

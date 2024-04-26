@@ -1,0 +1,55 @@
+.about{
+    padding: 120px 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    align-items: center;
+    background: url("../../images/about-img-shadow.png") no-repeat center, var(--color-bg-dark);
+    background-size: cover;
+    position: relative;
+    
+}
+
+.about-text{
+    max-width: 500px;
+    background-color: var(--color-bg-about-text);
+    padding: 2rem;
+}
+
+.about-text .color-about{
+    color: var(--color-primary);
+    
+}
+
+.about-text h2{
+    font-size: 2.44rem;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.about-text p{
+    font-size: 0.90rem;
+    color: gray;
+    margin-bottom: 2rem;
+}
+
+.about-image{
+    width: 100%;
+}
+
+.image-1,.image-2,
+.image-3{
+    display: none;
+}
+
+@media (min-width: 1042px){
+    .about{
+       
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+    }
+    
+
+    
+    
+}

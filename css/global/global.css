@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+}
+
+:root{
+    --color-primary:#FF8605;
+    --color-card:#FF9914;
+    --color-dark:#1F2009;
+    --color-hover:#ff2b05;
+    --color-bg-dark:#2E2E3A;
+    --color-bg-about-text:hsl(234 14% 14%);
+    --color-bg-winner:hsl(234 14% 14%);
+}
+
+body{
+    background-color: var(--color-bg-dark);
+}
+
+
+span{
+    display: inline-block;
+}
+
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+input{
+    border: none;
+    outline: none;
+    background: none;
+}
+
+button{
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.container{
+    max-width: 1500px;
+    margin: 0px auto;
+}
+
+.color{
+    color: var(--color-primary);
+    margin-bottom: 2rem;
+}
+
+
+
+.btn{
+    padding: 1rem 4rem;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius:5px;
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
+.btn-card{
+    padding: .90rem 3rem;
+    width: 100%;
+    text-align: center;
+    background-color: var(--color-primary);
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.js-scroll{
+    opacity: 0;
+    transform: translate3d(-30px,0,0);
+    transition: .4s;
+}
+
+
+.js-scroll.visible{
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
+
+
+.color{
+    color: var(--color-primary);
+}

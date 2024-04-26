@@ -1,0 +1,41 @@
+.home{
+    padding: 0px 12px;
+    height: 100vh;
+    background: url('../../images/hero-banner.jpg') no-repeat center;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.home h1{
+    font-size: 3rem;
+    color: #fff;
+}
+
+.home p{
+    font-size: 2rem;
+    color: rgb(168, 153, 153);
+}
+
+.link-home{
+    color: var(--color-primary);
+    font-size: 1.1rem;
+}
+
+.btn-group{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+@media (min-width:1042px){
+    .home h1{
+        font-size: 9rem;
+        
+    }
+}
